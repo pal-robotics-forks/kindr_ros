@@ -34,14 +34,15 @@ include_directories(SYSTEM ${kindr_INCLUDE_DIRS})
 #############
 
 catkin_add_gtest(${PROJECT_NAME}-test
-  test/test_main.cpp
-  test/RosGeometryMsgPhysicalQuantitiesTest.cpp
-  test/RosGeometryMsgRotationTest.cpp
-  test/RosGeometryMsgPoseTest.cpp
-  test/RosTfPoseTest.cpp
-  test/TfConventionTest.cpp
+    test/test_main.cpp
+    test/RosGeometryMsgPhysicalQuantitiesTest.cpp
+    test/RosGeometryMsgRotationTest.cpp
+    test/RosGeometryMsgPoseTest.cpp
+    test/RosTfPoseTest.cpp
+    test/KindrExtrasTest.cpp
+    test/TfConventionTest.cpp
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/test
-  )
+)
 if(TARGET ${PROJECT_NAME}-test)
   target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
   find_package(cmake_code_coverage QUIET)
