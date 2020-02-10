@@ -40,6 +40,7 @@ catkin_add_gtest(${PROJECT_NAME}-test
     test/RosGeometryMsgPoseTest.cpp
     test/RosTfPoseTest.cpp
     test/TfConventionTest.cpp
+    test/KindrExtrasTest.cpp
 )
 if(TARGET ${PROJECT_NAME}-test)
    target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
