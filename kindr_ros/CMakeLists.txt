@@ -25,9 +25,9 @@ catkin_package(
 )
 
 include_directories(include)
-include_directories(${catkin_INCLUDE_DIRS})
-include_directories(${EIGEN3_INCLUDE_DIR})
-include_directories(${kindr_INCLUDE_DIRS})
+include_directories(SYSTEM ${catkin_INCLUDE_DIRS})
+include_directories(SYSTEM ${EIGEN3_INCLUDE_DIR})
+include_directories(SYSTEM ${kindr_INCLUDE_DIRS})
 
 #############
 ## Testing ##
