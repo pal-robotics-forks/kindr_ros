@@ -2,8 +2,8 @@
 Changelog for package kindr_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2020-03-16)
+------------------
 * Encapsulate tests in CATKIN_ENABLE_TESTING
 * Add 1d x ND time conversions and some examples
 * Use SYSTEM on include_directories, avoids warnings from external headers
