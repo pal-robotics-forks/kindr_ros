@@ -33,18 +33,20 @@ include_directories(SYSTEM ${kindr_INCLUDE_DIRS})
 ## Testing ##
 #############
 
-catkin_add_gtest(${PROJECT_NAME}-test
-    test/test_main.cpp
-    test/RosGeometryMsgPhysicalQuantitiesTest.cpp
-    test/RosGeometryMsgRotationTest.cpp
-    test/RosGeometryMsgPoseTest.cpp
-    test/RosTfPoseTest.cpp
-    test/TfConventionTest.cpp
-    test/KindrExtrasTest.cpp
-)
-if(TARGET ${PROJECT_NAME}-test)
-   target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
-endif()
+if(CATKIN_ENABLE_TESTING)
+	catkin_add_gtest(${PROJECT_NAME}-test
+	    test/test_main.cpp
+	    test/RosGeometryMsgPhysicalQuantitiesTest.cpp
+	    test/RosGeometryMsgRotationTest.cpp
+	    test/RosGeometryMsgPoseTest.cpp
+	    test/RosTfPoseTest.cpp
+	    test/TfConventionTest.cpp
+	    test/KindrExtrasTest.cpp
+	)
+	if(TARGET ${PROJECT_NAME}-test)
+	   target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES})
+	endif()
+endif(CATKIN_ENABLE_TESTING)
 
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
