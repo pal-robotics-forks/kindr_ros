@@ -2,8 +2,8 @@
 Changelog for package kindr_rviz_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2020-03-16)
+------------------
 * Add SYSTEM to more include_directories
 * Merge branch 'fix/package_xml_cleanup' into 'master'
   Cleanup of package.xml files
