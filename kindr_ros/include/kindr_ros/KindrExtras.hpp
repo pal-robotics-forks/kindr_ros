@@ -111,7 +111,7 @@ typedef AngularAcceleration<double, Eigen::Dynamic> AngularAccelerationXD;
 typedef AngularVelocity<double, Eigen::Dynamic> AngularVelocityXD;
 typedef Torque<double, Eigen::Dynamic> TorqueXD;
 typedef AngularMomentum<double, Eigen::Dynamic> AngularMomentumXD;
-typedef Time<double, Eigen::Dynamic> AngleXD;
+typedef Angle<double, Eigen::Dynamic> AngleXD;
 
 }
 namespace kindr {
