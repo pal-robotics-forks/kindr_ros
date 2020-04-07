@@ -82,6 +82,19 @@ template <typename PrimType_, int Dimension_>
 using Angle = Vector<PhysicalType::Angle, PrimType_, Dimension_>;
 typedef Angle<double, 3> Angle3D;
 
+typedef Time<double, 1> Time1D;
+typedef Velocity<double, 1> Velocity1D;
+typedef Position<double, 1> Position1D;
+typedef Acceleration<double, 1> Acceleration1D;
+typedef Jerk<double, 1> Jerk1D;
+typedef Force<double, 1> Force1D;
+typedef Momentum<double, 1> Momentum1D;
+typedef AngularJerk<double, 1> AngularJerk1D;
+typedef AngularAcceleration<double, 1> AngularAcceleration1D;
+typedef AngularVelocity<double, 1> AngularVelocity1D;
+typedef Torque<double, 1> Torque1D;
+typedef AngularMomentum<double, 1> AngularMomentum1D;
+typedef Angle<double, 1> Angle1D;
 
 
 typedef Time<double, 2> Time2D;
