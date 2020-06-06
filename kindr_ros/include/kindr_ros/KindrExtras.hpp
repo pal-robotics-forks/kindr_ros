@@ -63,38 +63,23 @@ inline std::vector<Eigen::Isometry3d> kindrMatVectorToEigen(const std::vector<ki
   return ret;
 }
 
-
-
-template<typename PrimType_>
-class Seconds
-{
-public:
-  inline explicit Seconds(double seconds)
-    : impl_(seconds)
-  {}
-  PrimType_ impl_;
-};
-typedef Seconds<double> SecondsD;
-typedef Seconds<float> SecondsF;
-
 //! \brief Angle Vector missing from kindr, we make no assumption on how to apply the rotation
 template <typename PrimType_, int Dimension_>
 using Angle = Vector<PhysicalType::Angle, PrimType_, Dimension_>;
 typedef Angle<double, 3> Angle3D;
 
-typedef Time<double, 1> Time1D;
-typedef Velocity<double, 1> Velocity1D;
-typedef Position<double, 1> Position1D;
-typedef Acceleration<double, 1> Acceleration1D;
-typedef Jerk<double, 1> Jerk1D;
-typedef Force<double, 1> Force1D;
-typedef Momentum<double, 1> Momentum1D;
-typedef AngularJerk<double, 1> AngularJerk1D;
-typedef AngularAcceleration<double, 1> AngularAcceleration1D;
-typedef AngularVelocity<double, 1> AngularVelocity1D;
-typedef Torque<double, 1> Torque1D;
-typedef AngularMomentum<double, 1> AngularMomentum1D;
-typedef Angle<double, 1> Angle1D;
+typedef Velocity<double, 1> VelocityD;
+typedef Position<double, 1> PositionD;
+typedef Acceleration<double, 1> AccelerationD;
+typedef Jerk<double, 1> JerkD;
+typedef Force<double, 1> ForceD;
+typedef Momentum<double, 1> MomentumD;
+typedef AngularJerk<double, 1> AngularJerkD;
+typedef AngularAcceleration<double, 1> AngularAccelerationD;
+typedef AngularVelocity<double, 1> AngularVelocityD;
+typedef Torque<double, 1> TorqueD;
+typedef AngularMomentum<double, 1> AngularMomentumD;
+typedef Angle<double, 1> AngleD;
 
 
 typedef Time<double, 2> Time2D;
@@ -135,23 +120,15 @@ class DerivativeType
 {
 };
 
-// Allows that BASE / Time = DERIVATIVE and DERIVATIVE * TIME = BASE
+// Allows that BASE / Time = DERIVATIVE and DERIVATIVE * TIME = BASE with ros::Duration
 #define KINDR_PAL_SPECIALIZE_PHYS_QUANT_TIME_DERIVATIVE(DERIVATIVE, BASE) \
   inline DERIVATIVE operator/(const BASE &a, const ros::Duration &dt) \
 { \
-  return  DERIVATIVE(a.operator/(dt.toSec())); \
+  return  DERIVATIVE(a / kindr::TimeD(dt.toSec())); \
 } \
 inline BASE operator*(const DERIVATIVE &a,  const ros::Duration &dt) \
 { \
-  return  BASE(a.operator*(dt.toSec())); \
-} \
-  inline DERIVATIVE operator/(const BASE &a, const SecondsD &dt) \
-{ \
-  return  DERIVATIVE(a.operator/(dt.impl_)); \
-} \
-inline BASE operator*(const DERIVATIVE &a,  const SecondsD &dt) \
-{ \
-  return  BASE(a.operator*(dt.impl_)); \
+  return  BASE(a * kindr::TimeD(dt.toSec())); \
 } \
 template<> \
 class DerivativeType<BASE>\
