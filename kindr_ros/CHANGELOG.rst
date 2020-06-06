@@ -2,8 +2,8 @@
 Changelog for package kindr_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.2 (2020-06-06)
+------------------
 * Simplify conversions taking advantage of upstream changes
 * Add 1D typedefs
 * Fix wrong typedef
