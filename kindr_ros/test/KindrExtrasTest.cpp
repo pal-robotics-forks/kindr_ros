@@ -42,10 +42,11 @@ void TimeDerivativeTestImpl()
 {
   // Both Duration types here can be interchanged
   ros::Duration ros_dt(2.0);
-  kindr::SecondsD kindr_dt(2.0);
+  kindr::TimeD kindr_dt(2.0);
 
   // Linear Distance Types
   {
+    kindr::TimeD d;
     kindr::Position<double, Dimensions> p;
     p.setRandom();
     kindr::Velocity<double, Dimensions> v = p/ros_dt;
