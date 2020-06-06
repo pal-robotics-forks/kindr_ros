@@ -2,6 +2,9 @@
 Changelog for package kindr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.3.1 (2020-03-16)
 ------------------
 * Merge branch 'fix/package_xml_cleanup' into 'master'

@@ -2,6 +2,9 @@
 Changelog for package multi_dof_joint_trajectory_rviz_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.3.1 (2020-03-16)
 ------------------
 * Add SYSTEM to more include_directories

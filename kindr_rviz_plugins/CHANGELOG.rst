@@ -2,6 +2,9 @@
 Changelog for package kindr_rviz_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.3.1 (2020-03-16)
 ------------------
 * Add SYSTEM to more include_directories

@@ -2,6 +2,13 @@
 Changelog for package kindr_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Simplify conversions taking advantage of upstream changes
+* Add 1D typedefs
+* Fix wrong typedef
+* Contributors: Victor Lopez
+
 0.3.1 (2020-03-16)
 ------------------
 * Encapsulate tests in CATKIN_ENABLE_TESTING
