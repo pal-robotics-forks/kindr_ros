@@ -30,8 +30,8 @@ Changelog for package kindr_ros
   GitOrigin-RevId: f314810b4e0945d3f88af8f2d54a4b3df9f8793c
 * Contributors: Gabriel Hottiger, Philipp Leemann, Remo Diethelm, Victor Lopez
 
-Forthcoming
------------
+0.3.3 (2020-09-28)
+------------------
 * 0.3.2
 * Updated Changelog
 * Simplify conversions taking advantage of upstream changes

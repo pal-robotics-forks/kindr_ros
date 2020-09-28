@@ -16,8 +16,8 @@ Changelog for package kindr_msgs
   GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
 * Contributors: Gabriel Hottiger, Remo Diethelm
 
-Forthcoming
------------
+0.3.3 (2020-09-28)
+------------------
 * 0.3.2
 * Updated Changelog
 * 0.3.1
