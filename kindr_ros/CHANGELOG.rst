@@ -30,6 +30,43 @@ Changelog for package kindr_ros
   GitOrigin-RevId: f314810b4e0945d3f88af8f2d54a4b3df9f8793c
 * Contributors: Gabriel Hottiger, Philipp Leemann, Remo Diethelm, Victor Lopez
 
+Forthcoming
+-----------
+* 0.3.2
+* Updated Changelog
+* Simplify conversions taking advantage of upstream changes
+* Add 1D typedefs
+* Fix wrong typedef
+* 0.3.1
+* Updated Changelog
+* Encapsulate tests in CATKIN_ENABLE_TESTING
+* Add 1d x ND time conversions and some examples
+* Use SYSTEM on include_directories, avoids warnings from external headers
+* Merge branch 'fix/add_test_cov_prajish_list' into 'master'
+  [motion_control] Add test coverage for some packages
+  GitOrigin-RevId: 4c861d3e9954cfd4eec98d1c88278277f241a0e6
+* Merge branch 'feature/rd_cov_packages_cpp' into 'master'
+  [cmake coverage] Coverage for some packages
+  GitOrigin-RevId: 63a0e692a8ddd11e0f2f75638969ee4a465ab8b2
+* Merge branch 'fix/update-cmake-minimum-version' into 'master'
+  update cmake minimum version from 2.8.3 to 3.5.1
+  GitOrigin-RevId: 3719820fca7758e5ce1feee3409a3cc6b0af17a3
+* Merge branch 'fix/package_xml_cleanup' into 'master'
+  Cleanup of package.xml files
+  GitOrigin-RevId: b5d8e56d14cb59338714cbc207c62af389d35826
+* Merge branch 'fix/kindr_include_dirs' into 'master'
+  Make sure kindr_include_dirs comes after catkin_include_dirs
+  GitOrigin-RevId: b356308f8a798e555338a24607f87f6ff8f1d91d
+* Merge branch 'fix/remove_or_update_weblinks_in_package_xml' into 'master'
+  Fix/remove or update weblinks in package xml
+  See merge request anybotics/anybotics!175
+  GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
+* Merge branch 'fix/use_anybotics_email_addresses' into 'master'
+  Using anybotics email addresses for all anybotics employees.
+  See merge request anybotics/anybotics!174
+  GitOrigin-RevId: f314810b4e0945d3f88af8f2d54a4b3df9f8793c
+* Contributors: Enea Scioni, Gabriel Hottiger, Manuel Dätwiler, Philipp Leemann, Prajish Sankar, Remo Diethelm, Victor Lopez
+
 0.3.0 (2019-03-14)
 ------------------
 

@@ -16,6 +16,24 @@ Changelog for package kindr_msgs
   GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
 * Contributors: Gabriel Hottiger, Remo Diethelm
 
+Forthcoming
+-----------
+* 0.3.2
+* Updated Changelog
+* 0.3.1
+* Updated Changelog
+* Merge branch 'fix/update-cmake-minimum-version' into 'master'
+  update cmake minimum version from 2.8.3 to 3.5.1
+  GitOrigin-RevId: 3719820fca7758e5ce1feee3409a3cc6b0af17a3
+* Merge branch 'fix/package_xml_cleanup' into 'master'
+  Cleanup of package.xml files
+  GitOrigin-RevId: b5d8e56d14cb59338714cbc207c62af389d35826
+* Merge branch 'fix/remove_or_update_weblinks_in_package_xml' into 'master'
+  Fix/remove or update weblinks in package xml
+  See merge request anybotics/anybotics!175
+  GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
+* Contributors: Enea Scioni, Gabriel Hottiger, Remo Diethelm, Victor Lopez
+
 0.3.0 (2019-03-14)
 ------------------
 

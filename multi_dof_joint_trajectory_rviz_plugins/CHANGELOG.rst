@@ -17,6 +17,31 @@ Changelog for package multi_dof_joint_trajectory_rviz_plugins
   GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
 * Contributors: Gabriel Hottiger, Remo Diethelm, Victor Lopez
 
+Forthcoming
+-----------
+* 0.3.2
+* Updated Changelog
+* 0.3.1
+* Updated Changelog
+* Add SYSTEM to more include_directories
+* Merge branch 'feature/motion_control_test_coverage_vy' into 'master'
+  [test_coverage] Added test coverage to a set of motion_control packages
+  GitOrigin-RevId: f1b31fa1871244dd12ccb1ef30d658a6e1517665
+* Merge branch 'feature/rd_cov_packages_cpp' into 'master'
+  [cmake coverage] Coverage for some packages
+  GitOrigin-RevId: 63a0e692a8ddd11e0f2f75638969ee4a465ab8b2
+* Merge branch 'fix/update-cmake-minimum-version' into 'master'
+  update cmake minimum version from 2.8.3 to 3.5.1
+  GitOrigin-RevId: 3719820fca7758e5ce1feee3409a3cc6b0af17a3
+* Merge branch 'fix/package_xml_cleanup' into 'master'
+  Cleanup of package.xml files
+  GitOrigin-RevId: b5d8e56d14cb59338714cbc207c62af389d35826
+* Merge branch 'fix/remove_or_update_weblinks_in_package_xml' into 'master'
+  Fix/remove or update weblinks in package xml
+  See merge request anybotics/anybotics!175
+  GitOrigin-RevId: ba2d4fc878cf3f3870704102e19c02417a42d960
+* Contributors: Enea Scioni, Francisco Giráldez Gámez, Gabriel Hottiger, Manuel Dätwiler, Remo Diethelm, Victor Lopez
+
 0.3.0 (2019-03-14)
 ------------------
 * add missing qt rosdep key
